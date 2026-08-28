@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Harish Thangavelu | ML & AI Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0a0f;
+  --surface:#13131a;
+  --surface2:#1c1c26;
+  --border:#2a2a3a;
+  --accent:#6c63ff;
+  --accent2:#00d4aa;
+  --text:#f0efff;
+  --muted:#8888aa;
+  --card-h:320px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:15px;line-height:1.7;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:var(--accent);letter-spacing:-0.5px}
+.nav-links{display:flex;gap:1.75rem;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+
+/* SECTIONS */
+section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
+.section-label{font-size:11px;font-weight:600;letter-spacing:.12em;color:var(--accent2);text-transform:uppercase;margin-bottom:.75rem}
+.section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--text);margin-bottom:2.5rem;line-height:1.2}
+
+/* HERO */
+#hero{padding-top:7rem;padding-bottom:4rem;max-width:1100px;margin:0 auto}
+.hero-grid{display:grid;grid-template-columns:1fr 260px;gap:3rem;align-items:center}
+.hero-eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--accent2);text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--accent2)}
+.hero-name{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:700;line-height:1.05;margin-bottom:.6rem;color:var(--text)}
+.hero-name span{color:var(--accent)}
+.hero-role{font-size:1.05rem;color:var(--muted);margin-bottom:1.25rem;font-weight:400}
+.hero-role strong{color:var(--accent2);font-weight:600}
+.hero-bio{color:var(--muted);font-size:.9rem;max-width:520px;margin-bottom:1.75rem;line-height:1.8}
+.hero-meta{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.75rem}
+.hero-meta a,.hero-meta span{color:var(--muted);font-size:.85rem;text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.hero-meta a:hover{color:var(--accent2)}
+.hero-meta svg{width:14px;height:14px;flex-shrink:0}
+.hero-btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.55rem 1.25rem;border-radius:6px;font-size:.82rem;font-weight:600;text-decoration:none;transition:all .2s;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-primary:hover{background:#5a52e0}
+.btn-outline{background:transparent;color:var(--text);border-color:var(--border)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.hero-photo-wrap{display:flex;justify-content:center}
+.hero-photo{width:220px;height:220px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);box-shadow:0 0 40px rgba(108,99,255,0.3);background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:5rem;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.status-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:11px;font-weight:600;color:var(--accent2);background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.2);border-radius:20px;padding:.25rem .7rem;margin-bottom:1rem}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--accent2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* SKILLS */
+#skills{background:var(--surface);border-radius:16px;padding:3rem 2rem}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+.skill-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1.25rem;transition:border-color .2s}
+.skill-card:hover{border-color:var(--accent)}
+.skill-card-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.85rem}
+.skill-icon{width:32px;height:32px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.skill-card-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.9rem;color:var(--text)}
+.skill-card-sub{font-size:.75rem;color:var(--muted);margin-bottom:.75rem}
+.skill-tags{display:flex;flex-wrap:wrap;gap:.35rem}
+.tag{font-size:.7rem;font-weight:500;padding:.2rem .55rem;border-radius:4px;background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
+.tag-accent{background:rgba(108,99,255,.1);color:#a09aff;border-color:rgba(108,99,255,.2)}
+.tag-teal{background:rgba(0,212,170,.08);color:#4ad9c0;border-color:rgba(0,212,170,.18)}
+
+/* EXPERIENCE */
+.exp-list{display:flex;flex-direction:column;gap:0}
+.exp-item{display:grid;grid-template-columns:140px 1fr;gap:1.5rem;padding:2rem 0;border-bottom:1px solid var(--border);position:relative}
+.exp-item:last-child{border-bottom:none}
+.exp-date{font-size:.75rem;color:var(--muted);padding-top:.2rem;font-weight:500;line-height:1.5}
+.exp-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);position:absolute;left:140px;top:2.3rem;transform:translateX(-50%) translateX(.75rem);display:none}
+.exp-content{}
+.exp-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1rem;color:var(--text);margin-bottom:.15rem}
+.exp-company{font-size:.82rem;color:var(--accent2);margin-bottom:.2rem;font-weight:500}
+.exp-location{font-size:.75rem;color:var(--muted);margin-bottom:.75rem}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.exp-bullets li{font-size:.83rem;color:var(--muted);padding-left:1rem;position:relative;line-height:1.65}
+.exp-bullets li::before{content:'→';position:absolute;left:0;color:var(--accent);font-size:.75rem}
+.exp-bullets li strong{color:var(--text)}
+
+/* PROJECTS - flip cards */
+#projects{padding-top:5rem;padding-bottom:5rem}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
+.flip-card{height:var(--card-h);perspective:1000px;cursor:pointer}
+.flip-inner{position:relative;width:100%;height:100%;transition:transform .65s cubic-bezier(.4,0,.2,1);transform-style:preserve-3d}
+.flip-card.flipped .flip-inner{transform:rotateY(180deg)}
+.flip-front,.flip-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:12px;border:1px solid var(--border);overflow:hidden}
+.flip-front{background:var(--surface);padding:1.5rem;display:flex;flex-direction:column}
+.flip-back{background:var(--surface2);transform:rotateY(180deg);padding:1.5rem;display:flex;flex-direction:column;justify-content:space-between}
+.flip-card:hover .flip-front{border-color:var(--accent)}
+.project-type{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.6rem}
+.project-title{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:.5rem;line-height:1.3}
+.project-desc{font-size:.78rem;color:var(--muted);flex:1;line-height:1.7}
+.project-tags{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.75rem}
+.flip-hint{font-size:.68rem;color:var(--muted);margin-top:.75rem;display:flex;align-items:center;gap:.3rem;opacity:.6}
+.back-metrics{display:flex;flex-direction:column;gap:.5rem}
+.metric{display:flex;justify-content:space-between;align-items:center;padding:.4rem .6rem;background:var(--bg);border-radius:6px}
+.metric-label{font-size:.72rem;color:var(--muted)}
+.metric-value{font-size:.78rem;font-weight:700;color:var(--accent2)}
+.back-stack{margin-top:.75rem}
+.back-stack-title{font-size:.68rem;color:var(--muted);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em}
+.back-links{display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap}
+.back-link{font-size:.72rem;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:4px;padding:.2rem .55rem}
+.back-link:hover{background:var(--accent);color:#fff}
+.building-badge{display:inline-flex;align-items:center;gap:.35rem;font-size:.65rem;font-weight:700;color:#f9a825;background:rgba(249,168,37,.1);border:1px solid rgba(249,168,37,.25);border-radius:4px;padding:.15rem .45rem;text-transform:uppercase;letter-spacing:.08em}
+
+/* visual placeholder on back */
+.back-visual{height:80px;border-radius:8px;margin-bottom:.75rem;display:flex;align-items:center;justify-content:center;font-size:2rem;position:relative;overflow:hidden}
+.vis-orbit{background:linear-gradient(135deg,#1a1a2e,#16213e);animation:orbit-glow 3s ease-in-out infinite alternate}
+.vis-ai{background:linear-gradient(135deg,#0d1117,#1c1f26);animation:ai-pulse 2.5s ease-in-out infinite}
+.vis-cv{background:linear-gradient(135deg,#0f1923,#1a2a1a);animation:cv-scan 2s linear infinite}
+.vis-app{background:linear-gradient(135deg,#1a0a2e,#2a1a0e);animation:app-shift 4s ease infinite}
+@keyframes orbit-glow{from{box-shadow:inset 0 0 20px rgba(108,99,255,.2)}to{box-shadow:inset 0 0 40px rgba(108,99,255,.5)}}
+@keyframes ai-pulse{0%,100%{box-shadow:inset 0 0 20px rgba(0,212,170,.1)}50%{box-shadow:inset 0 0 40px rgba(0,212,170,.3)}}
+@keyframes cv-scan{0%{box-shadow:inset 0 0 20px rgba(100,200,100,.1)}50%{box-shadow:inset 0 0 30px rgba(100,200,100,.3)}100%{box-shadow:inset 0 0 20px rgba(100,200,100,.1)}}
+@keyframes app-shift{0%,100%{box-shadow:inset 0 0 20px rgba(249,168,37,.1)}50%{box-shadow:inset 0 0 40px rgba(249,168,37,.2)}}
+
+/* EDUCATION */
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem}
+.edu-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.4rem;transition:border-color .2s}
+.edu-card:hover{border-color:var(--accent2)}
+.edu-degree{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.95rem;color:var(--text);margin-bottom:.25rem}
+.edu-school{font-size:.82rem;color:var(--accent2);font-weight:500;margin-bottom:.15rem}
+.edu-period{font-size:.75rem;color:var(--muted);margin-bottom:.65rem}
+.edu-courses{font-size:.75rem;color:var(--muted);line-height:1.7}
+
+/* CONTACT */
+#contact{text-align:center}
+.contact-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:3rem 2rem;max-width:540px;margin:0 auto}
+.contact-links{display:flex;flex-direction:column;gap:.65rem;margin-top:1.5rem}
+.contact-link{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--muted);font-size:.85rem;padding:.5rem .75rem;border-radius:7px;border:1px solid var(--border);transition:all .2s}
+.contact-link:hover{border-color:var(--accent);color:var(--text)}
+.contact-link svg{width:16px;height:16px;color:var(--accent);flex-shrink:0}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:.78rem;color:var(--muted)}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero-photo-wrap{order:-1}
+  .hero-meta{align-items:center}
+  .hero-btns{justify-content:center}
+  .hero-eyebrow{justify-content:center}
+  .exp-item{grid-template-columns:1fr}
+  .exp-date{padding-top:0}
+  nav{padding:0 1rem}
+  section{padding:3.5rem 1rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .flip-inner,.status-dot{transition:none;animation:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">HT.</span>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Open to opportunities
+      </div>
+      <div class="hero-eyebrow">ML &amp; AI Engineer</div>
+      <h1 class="hero-name">Hello, I'm<br><span>Harish Thangavelu</span></h1>
+      <p class="hero-role"><strong>ML Engineer · AI Engineer · Computer Vision</strong></p>
+      <p class="hero-bio">
+        MSc Electro-Mobility student at FAU Erlangen-Nürnberg, specialising in AI &amp; Autonomous Driving.
+        I build end-to-end ML systems — from physics-informed satellite models and computer vision annotation pipelines
+        to GenAI agentic backends and full-stack AI platforms.
+      </p>
+      <div class="hero-meta">
+        <a href="mailto:harishthangavelu26@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          harishthangavelu26@gmail.com
+        </a>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Erlangen, Germany
+        </span>
+      </div>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="https://linkedin.com/in/harish-thangavelu/" target="_blank">LinkedIn</a>
+        <a class="btn btn-outline" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+        <a class="btn btn-outline" href="mailto:harishthangavelu26@gmail.com">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">🤖</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<div style="max-width:1100px;margin:0 auto;padding:0 2rem 1rem">
+<div id="skills" style="background:var(--surface);border-radius:16px;padding:2.5rem">
+  <div class="section-label">Technical Skills</div>
+  <div class="section-title" style="margin-bottom:1.75rem">What I work with</div>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-card-header">
+        <div class="skill-icon" style="background:rgba(108,99,255,.12)">🧠</div>
+        <div class="skill-card-title">Machine Learning</div>
+      </div>
+      <div class="skill-card-sub">My strongest suite — end-to-end model development</div>
+      <div class="skill-tags">
+        <span class="tag tag-accent">PyTorch</span><span class="tag tag-accent">TensorFlow</span>
+        <span class="tag tag-accent">LSTM</span><span class="tag tag-accent">Residual Learning</span>
+        <span class="tag tag-accent">Surrogate Modeling</span><span class="tag tag-accent">Hyperparameter Opt.</span>
+        <span class="tag tag-accent">Multi-Armed Bandit</span><span class="tag tag-accent">Scikit-learn</span>
+        <span class="tag tag-accent">Time Series</span><span class="tag tag-accent">Anomaly Detection</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-header">
+        <div class="skill-icon" style="background:rgba(0,212,170,.1)">👁️</div>
+        <div class="skill-card-title">Computer Vision</div>
+      </div>
+      <div class="skill-card-sub">Object detection, annotation pipelines, industrial CV</div>
+      <div class="skill-tags">
+        <span class="tag tag-teal">MMDetection</span><span class="tag tag-teal">YOLOv8</span>
+        <span class="tag tag-teal">MMRotate</span><span class="tag tag-teal">OpenCV</span>
+        <span class="tag tag-teal">CVAT</span><span class="tag tag-teal">Nuclio</span>
+        <span class="tag tag-teal">Object Detection</span><span class="tag tag-teal">Image Segmentation</span>
+        <span class="tag tag-teal">OCR Pipelines</span><span class="tag tag-teal">OpenMMLab</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-header">
+        <div class="skill-icon" style="background:rgba(255,160,80,.1)">✨</div>
+        <div class="skill-card-title">Generative AI &amp; Agents</div>
+      </div>
+      <div class="skill-card-sub">LLM integration, agentic pipelines, RAG systems</div>
+      <div class="skill-tags">
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">OpenAI API</span>
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">LangChain</span>
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">LangGraph</span>
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">RAG</span>
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Agentic AI</span>
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Prompt Engineering</span>
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">n8n Workflows</span>
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">ElevenLabs</span>
+        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Twilio</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-header">
+        <div class="skill-icon" style="background:rgba(100,200,255,.1)">🔧</div>
+        <div class="skill-card-title">Backend &amp; APIs</div>
+      </div>
+      <div class="skill-card-sub">Production-grade backend systems and REST services</div>
+      <div class="skill-tags">
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">FastAPI</span>
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Django</span>
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">REST APIs</span>
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Node.js</span>
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Express.js</span>
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Docker</span>
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Docker Compose</span>
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Bash</span>
+        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Linux</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-header">
+        <div class="skill-icon" style="background:rgba(200,100,255,.1)">🗄️</div>
+        <div class="skill-card-title">Data &amp; Databases</div>
+      </div>
+      <div class="skill-card-sub">Pipelines, storage, vector search</div>
+      <div class="skill-tags">
+        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">PostgreSQL</span>
+        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Supabase</span>
+        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">SQL</span>
+        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Vector Search</span>
+        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Embeddings</span>
+        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">pandas</span>
+        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">NumPy</span>
+        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">AWS S3</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-header">
+        <div class="skill-icon" style="background:rgba(255,100,100,.1)">📊</div>
+        <div class="skill-card-title">Data Visualisation</div>
+      </div>
+      <div class="skill-card-sub">Dashboards, KPI systems, scientific visualisation</div>
+      <div class="skill-tags">
+        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Streamlit</span>
+        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">CesiumJS</span>
+        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Plotly</span>
+        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Power BI</span>
+        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Heatmaps</span>
+        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Jupyter</span>
+        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Matplotlib</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-header">
+        <div class="skill-icon" style="background:rgba(0,200,120,.1)">🤖</div>
+        <div class="skill-card-title">Robotics &amp; Simulation</div>
+      </div>
+      <div class="skill-card-sub">Autonomous systems, physics-based simulation</div>
+      <div class="skill-tags">
+        <span class="tag tag-teal">ROS2</span><span class="tag tag-teal">Gazebo</span>
+        <span class="tag tag-teal">SLAM</span><span class="tag tag-teal">LiDAR</span>
+        <span class="tag tag-teal">A* Path Planning</span><span class="tag tag-teal">SGP4</span>
+        <span class="tag tag-teal">Orbital Mechanics</span><span class="tag tag-teal">State-Space Modeling</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-header">
+        <div class="skill-icon" style="background:rgba(255,220,50,.1)">☁️</div>
+        <div class="skill-card-title">Cloud &amp; DevOps</div>
+      </div>
+      <div class="skill-card-sub">Deployment, cloud infrastructure, CI/CD</div>
+      <div class="skill-tags">
+        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">AWS EC2</span>
+        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">AWS SageMaker</span>
+        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Railway</span>
+        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Vercel</span>
+        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Git</span>
+        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">GitHub Actions</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">Work Experience</div>
+  <div class="section-title">Professional Journey</div>
+  <div class="exp-list">
+
+    <div class="exp-item">
+      <div class="exp-date">Mar 2026 – Present<br><span style="color:var(--accent2);font-size:.7rem">Ongoing</span></div>
+      <div class="exp-content">
+        <div class="exp-title">Freelance AI Backend Engineer</div>
+        <div class="exp-company">Kaampass, UK</div>
+        <div class="exp-location">Remote</div>
+        <ul class="exp-bullets">
+          <li>Built a <strong>FastAPI backend</strong> end-to-end with a 9-component ATS scoring engine and vector-search job matching via Google Gemini embeddings</li>
+          <li>Designed a <strong>two-stage matching architecture</strong> — rule-based prefilter → AI semantic ranking — reducing per-request Gemini calls from ~50 to 1</li>
+          <li>Deployed backend to Railway, frontend to Vercel; isolated ML worker service to decouple AI uptime from main API</li>
+          <li>Verified scoring against 1,172 live job listings; ATS V2 scores in verified 53–78% range across real CV/job pairs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Aug 2025 – Feb 2026</div>
+      <div class="exp-content">
+        <div class="exp-title">Working Student — Computer Vision &amp; Data Automation</div>
+        <div class="exp-company">FranconAI · Client: MAindTec GmbH</div>
+        <div class="exp-location">Erlangen, Germany</div>
+        <ul class="exp-bullets">
+          <li>Built automated <strong>CVAT annotation pipeline</strong> via Docker + REST API, eliminating 120s inference timeouts and increasing labelling throughput <strong>3.2×</strong></li>
+          <li>Trained MMDetection object detection models on 18-class industrial wire-harness dataset with custom noise-handling logic</li>
+          <li>Deployed <strong>Multi-Armed Bandit hyperparameter search</strong> — 7× faster than manual tuning, lifting prediction accuracy from 30% → 70%</li>
+          <li>Built Streamlit KPI dashboards with per-class heatmaps, driving <strong>8% overall precision improvement</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Jun 2025 – Aug 2025</div>
+      <div class="exp-content">
+        <div class="exp-title">Intern — LLM Integration &amp; AI Automation</div>
+        <div class="exp-company">FranconAI</div>
+        <div class="exp-location">Erlangen, Germany</div>
+        <ul class="exp-bullets">
+          <li>Built an <strong>end-to-end AI telephony agent</strong> integrating Twilio + n8n + OpenAI + ElevenLabs for automated client intake and meeting scheduling</li>
+          <li>Implemented WhatsApp data-capture and Google Calendar sync, validating multi-tier system scalability</li>
+          <li>Containerised all services in Docker; orchestrated multi-service API communication for reliable call processing</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="padding-top:2rem">
+  <div class="section-label">Projects</div>
+  <div class="section-title">Click a card to flip it ↗</div>
+  <div class="projects-grid">
+
+    <!-- Card 1: Orbit -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="SGP4-LSTM project details">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="project-type" style="color:var(--accent)">🛰 Physics-Informed ML · MSc Thesis</div>
+          <div class="project-title">Hybrid Orbit Prediction<br>SGP4 + LSTM</div>
+          <div class="project-desc">Physics-informed LSTM that learns residual errors from ESA Swarm-A POD data to correct SGP4 orbital propagation — full pipeline from TLE ingestion to 3D visualisation.</div>
+          <div class="project-tags">
+            <span class="tag tag-accent">PyTorch</span><span class="tag tag-accent">LSTM</span><span class="tag tag-teal">SGP4</span><span class="tag">CesiumJS</span><span class="tag">Python</span>
+          </div>
+          <div class="flip-hint">↕ Click to see results</div>
+        </div>
+        <div class="flip-back">
+          <div class="back-visual vis-orbit">🛰️</div>
+          <div class="back-metrics">
+            <div class="metric"><span class="metric-label">RMSE reduction @ 1h</span><span class="metric-value">82.87%</span></div>
+            <div class="metric"><span class="metric-label">RMSE reduction @ 24h</span><span class="metric-value">36.01%</span></div>
+            <div class="metric"><span class="metric-label">Prediction horizons</span><span class="metric-value">1h → 720h</span></div>
+            <div class="metric"><span class="metric-label">Dataset size</span><span class="metric-value">44,640 rows · 9D</span></div>
+          </div>
+          <div class="back-links">
+            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: CVAT -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="CVAT pipeline project">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="project-type" style="color:var(--accent2)">👁 Computer Vision · Industrial</div>
+          <div class="project-title">Automated CV Annotation<br>Wire Harness Pipeline</div>
+          <div class="project-desc">End-to-end annotation automation for engineering schematics — YOLOv8 + MMRotate via Nuclio serverless, Multi-Armed Bandit optimiser, and live Streamlit dashboards.</div>
+          <div class="project-tags">
+            <span class="tag tag-teal">YOLOv8</span><span class="tag tag-teal">MMDetection</span><span class="tag tag-accent">MAB</span><span class="tag">CVAT</span><span class="tag">Docker</span>
+          </div>
+          <div class="flip-hint">↕ Click to see results</div>
+        </div>
+        <div class="flip-back">
+          <div class="back-visual vis-cv">🔍</div>
+          <div class="back-metrics">
+            <div class="metric"><span class="metric-label">Throughput increase</span><span class="metric-value">3.2×</span></div>
+            <div class="metric"><span class="metric-label">Hyperparameter search</span><span class="metric-value">7× faster</span></div>
+            <div class="metric"><span class="metric-label">Accuracy lift</span><span class="metric-value">30% → 70%</span></div>
+            <div class="metric"><span class="metric-label">Object classes</span><span class="metric-value">18 custom</span></div>
+          </div>
+          <div class="back-links">
+            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Kaampass -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="Kaampass platform">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="project-type" style="color:#ffb366">🧠 AI Platform · Full-Stack</div>
+          <div class="project-title">Kaampass<br>AI Job Matching Engine</div>
+          <div class="project-desc">Production job-matching platform with 9-component ATS scoring, Gemini semantic embeddings, two-stage matching architecture, and live cloud deployment.</div>
+          <div class="project-tags">
+            <span class="tag">FastAPI</span><span class="tag tag-accent">Gemini API</span><span class="tag">Supabase</span><span class="tag">Docker</span><span class="tag">Vercel</span>
+          </div>
+          <div class="flip-hint">↕ Click to see results</div>
+        </div>
+        <div class="flip-back">
+          <div class="back-visual vis-ai">🎯</div>
+          <div class="back-metrics">
+            <div class="metric"><span class="metric-label">Job listings indexed</span><span class="metric-value">1,172</span></div>
+            <div class="metric"><span class="metric-label">ATS score components</span><span class="metric-value">9-component</span></div>
+            <div class="metric"><span class="metric-label">API calls per request</span><span class="metric-value">50 → 1</span></div>
+            <div class="metric"><span class="metric-label">Scoring metrics</span><span class="metric-value">5 distinct</span></div>
+          </div>
+          <div class="back-links">
+            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: ROS2 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="ROS2 navigation project">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="project-type" style="color:var(--accent2)">🤖 Robotics · ROS2</div>
+          <div class="project-title">Autonomous Navigation<br>ROS2 &amp; Gazebo</div>
+          <div class="project-desc">ROS2-based robot navigation framework with A* path planning, LiDAR + SLAM integration, dynamic obstacle detection, and rule-based risk decision thresholds.</div>
+          <div class="project-tags">
+            <span class="tag tag-teal">ROS2</span><span class="tag tag-teal">Gazebo</span><span class="tag tag-teal">SLAM</span><span class="tag">LiDAR</span><span class="tag">A*</span>
+          </div>
+          <div class="flip-hint">↕ Click to see results</div>
+        </div>
+        <div class="flip-back">
+          <div class="back-visual vis-cv">🗺️</div>
+          <div class="back-metrics">
+            <div class="metric"><span class="metric-label">Path planning</span><span class="metric-value">A* algorithm</span></div>
+            <div class="metric"><span class="metric-label">Obstacle response</span><span class="metric-value">Dynamic re-route</span></div>
+            <div class="metric"><span class="metric-label">Sensing</span><span class="metric-value">LiDAR + SLAM</span></div>
+            <div class="metric"><span class="metric-label">Validated</span><span class="metric-value">Gazebo simulation</span></div>
+          </div>
+          <div class="back-links">
+            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5: Attendance App -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="Attendance portal project">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem">
+            <div class="project-type" style="color:#f9a825;margin-bottom:0">📱 Full-Stack App</div>
+            <span class="building-badge">Building</span>
+          </div>
+          <div class="project-title">Facility Care<br>Employee Portal</div>
+          <div class="project-desc">Production-grade attendance tracking and shift management platform — React 19 + TypeScript frontend, Express backend, live shift speedometer gauge, payslip viewer, and Docker deployment.</div>
+          <div class="project-tags">
+            <span class="tag">React 19</span><span class="tag">TypeScript</span><span class="tag">Express.js</span><span class="tag">Docker</span><span class="tag">Tailwind</span>
+          </div>
+          <div class="flip-hint">↕ Click for details</div>
+        </div>
+        <div class="flip-back">
+          <div class="back-visual vis-app">⏱️</div>
+          <div class="back-metrics">
+            <div class="metric"><span class="metric-label">Stack</span><span class="metric-value">React 19 + FastAPI</span></div>
+            <div class="metric"><span class="metric-label">Features</span><span class="metric-value">Shifts, Payslips, Leave</span></div>
+            <div class="metric"><span class="metric-label">Deployment</span><span class="metric-value">Docker · Cloud Ready</span></div>
+            <div class="metric"><span class="metric-label">Status</span><span class="metric-value" style="color:#f9a825">Active Development</span></div>
+          </div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:.5rem">Personal project — enterprise attendance management system with real-time shift tracking and statutory payslip generation.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label">Education</div>
+  <div class="section-title">Academic Background</div>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-degree">M.Sc. Electro-Mobility</div>
+      <div class="edu-school">Friedrich-Alexander-Universität Erlangen-Nürnberg</div>
+      <div class="edu-period">2023 – Present · Erlangen, Germany</div>
+      <div class="edu-courses"><strong style="color:var(--muted)">Focus:</strong> AI &amp; Autonomous Driving · Sustainable Mobility &amp; Production Technology<br><strong style="color:var(--muted)">Coursework:</strong> Machine Learning, ML in Signal Processing, Data Science, Robotics, Algorithms</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-degree">B.Eng. Mechanical Engineering</div>
+      <div class="edu-school">KGiSL Institute of Technology, Coimbatore</div>
+      <div class="edu-period">2018 – 2022 · India</div>
+      <div class="edu-courses"><strong style="color:var(--muted)">CGPA:</strong> 8.2 / 10<br><strong style="color:var(--muted)">Coursework:</strong> Mechatronics, Robotics, Automobile Engineering, CAD/CAM</div>
+    </div>
+  </div>
+  <div style="margin-top:1.5rem">
+    <div class="section-label" style="margin-bottom:.75rem">Certifications</div>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem">
+      <span class="tag tag-accent">AWS Essentials — Cognizant</span>
+      <span class="tag tag-teal">Linux &amp; Cisco Networking</span>
+      <span class="tag tag-accent">ROS — The Construct.ai</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">Get In Touch</div>
+  <div class="section-title">Let's Connect</div>
+  <div class="contact-card">
+    <p style="color:var(--muted);font-size:.88rem;margin-bottom:.5rem">Open to working student roles, internships, and MSc thesis collaborations in AI, Computer Vision, and GenAI.</p>
+    <div class="contact-links">
+      <a class="contact-link" href="mailto:harishthangavelu26@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        harishthangavelu26@gmail.com
+      </a>
+      <a class="contact-link" href="https://linkedin.com/in/harish-thangavelu/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        linkedin.com/in/harish-thangavelu
+      </a>
+      <a class="contact-link" href="https://github.com/HarishThangavelu" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        github.com/HarishThangavelu
+      </a>
+      <a class="contact-link" href="tel:+4917614799615">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/></svg>
+        +49 176 1479 9615
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Harish Thangavelu · Erlangen, Germany · Built with purpose</p>
+</footer>
+
+</body>
+</html>
