@@ -1,0 +1,136 @@
+<svg viewBox="0 0 417.5 270" xmlns="http://www.w3.org/2000/svg" style="width: 100%; background: rgb(10, 10, 15); border-radius: 10px;">
+  <defs>
+    <clipPath id="kclip"><rect width="400" height="260" rx="10"/></clipPath>
+    <linearGradient id="barGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#a09aff"/>
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#4ad9c0"/>
+    </linearGradient>
+    <linearGradient id="barGrad3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#ffcc66"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#kclip)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect width="400" height="260" fill="#0a0a0f" style="fill:rgb(10, 10, 15);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  
+  <rect x="0" y="0" width="400" height="36" fill="#0d0d18" style="fill:rgb(13, 13, 24);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="0" y1="36" x2="400" y2="36" stroke="#2a2a3a" stroke-width="1" style="fill:rgb(0, 0, 0);stroke:rgb(42, 42, 58);color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="14" y="14" font-family="monospace" font-size="8" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:8px;font-weight:400;text-anchor:start;dominant-baseline:auto">KAAMPASS · ATS SCORING ENGINE</text>
+  <text x="14" y="28" font-family="monospace" font-size="10" font-weight="700" fill="#00d4aa" style="fill:rgb(0, 212, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:700;text-anchor:start;dominant-baseline:auto">AI Job Matching Platform</text>
+  <text x="386" y="21" font-family="monospace" font-size="8" fill="#6c63ff" text-anchor="end" style="fill:rgb(108, 99, 255);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:8px;font-weight:400;text-anchor:end;dominant-baseline:auto">1,172 jobs indexed</text>
+
+  
+  <g transform="translate(70, 148)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    
+    <circle cx="0" cy="0" r="52" fill="none" stroke="#1c1c2a" stroke-width="8" style="fill:none;stroke:rgb(28, 28, 42);color:rgb(11, 11, 11);stroke-width:8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <circle cx="0" cy="0" r="52" fill="none" stroke="url(#barGrad1)" stroke-width="8" stroke-dasharray="255 72" stroke-dashoffset="64" stroke-linecap="round" style="fill:none;color:rgb(11, 11, 11);stroke-width:8px;stroke-dasharray:255px, 72px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      
+    </circle>
+    
+    <circle cx="0" cy="0" r="40" fill="#0d0d18" stroke="#1c1c2a" stroke-width="1" style="fill:rgb(13, 13, 24);stroke:rgb(28, 28, 42);color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <text x="0" y="-8" font-family="monospace" font-size="8" fill="#8888aa" text-anchor="middle" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:8px;font-weight:400;text-anchor:middle;dominant-baseline:auto">ATS SCORE</text>
+    <text x="0" y="10" font-family="monospace" font-size="22" font-weight="700" fill="#a09aff" text-anchor="middle" style="fill:rgb(160, 154, 255);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:22px;font-weight:700;text-anchor:middle;dominant-baseline:auto">78.0</text>
+    <text x="0" y="24" font-family="monospace" font-size="7" fill="#8888aa" text-anchor="middle" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:middle;dominant-baseline:auto">best match</text>
+  </g>
+
+  
+  <g transform="translate(145, 46)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+
+    
+    <g transform="translate(0, 0)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <text x="0" y="9" font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">Required Skills</text>
+      <text x="230" y="9" font-family="monospace" font-size="7" fill="#a09aff" text-anchor="end" style="fill:rgb(160, 154, 255);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:end;dominant-baseline:auto">26%</text>
+      <rect x="0" y="13" width="235" height="6" rx="3" fill="#1c1c2a" style="fill:rgb(28, 28, 42);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <rect x="0" y="13" width="0" height="6" rx="3" fill="url(#barGrad1)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+        
+      </rect>
+    </g>
+
+    <g transform="translate(0, 28)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <text x="0" y="9" font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">Skill Coverage</text>
+      <text x="230" y="9" font-family="monospace" font-size="7" fill="#00d4aa" text-anchor="end" style="fill:rgb(0, 212, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:end;dominant-baseline:auto">18%</text>
+      <rect x="0" y="13" width="235" height="6" rx="3" fill="#1c1c2a" style="fill:rgb(28, 28, 42);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <rect x="0" y="13" width="0" height="6" rx="3" fill="url(#barGrad2)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+        
+      </rect>
+    </g>
+
+    <g transform="translate(0, 56)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <text x="0" y="9" font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">Experience Match</text>
+      <text x="230" y="9" font-family="monospace" font-size="7" fill="#a09aff" text-anchor="end" style="fill:rgb(160, 154, 255);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:end;dominant-baseline:auto">15%</text>
+      <rect x="0" y="13" width="235" height="6" rx="3" fill="#1c1c2a" style="fill:rgb(28, 28, 42);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <rect x="0" y="13" width="0" height="6" rx="3" fill="url(#barGrad1)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+        
+      </rect>
+    </g>
+
+    <g transform="translate(0, 84)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <text x="0" y="9" font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">Semantic Match (AI)</text>
+      <text x="230" y="9" font-family="monospace" font-size="7" fill="#ffaa00" text-anchor="end" style="fill:rgb(255, 170, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:end;dominant-baseline:auto">14%</text>
+      <rect x="0" y="13" width="235" height="6" rx="3" fill="#1c1c2a" style="fill:rgb(28, 28, 42);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <rect x="0" y="13" width="0" height="6" rx="3" fill="url(#barGrad3)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+        
+      </rect>
+    </g>
+
+    <g transform="translate(0, 112)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <text x="0" y="9" font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">Education Score</text>
+      <text x="230" y="9" font-family="monospace" font-size="7" fill="#00d4aa" text-anchor="end" style="fill:rgb(0, 212, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:end;dominant-baseline:auto">12%</text>
+      <rect x="0" y="13" width="235" height="6" rx="3" fill="#1c1c2a" style="fill:rgb(28, 28, 42);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <rect x="0" y="13" width="0" height="6" rx="3" fill="url(#barGrad2)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+        
+      </rect>
+    </g>
+
+    <g transform="translate(0, 140)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <text x="0" y="9" font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">Location Fit</text>
+      <text x="230" y="9" font-family="monospace" font-size="7" fill="#a09aff" text-anchor="end" style="fill:rgb(160, 154, 255);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:end;dominant-baseline:auto">8%</text>
+      <rect x="0" y="13" width="235" height="6" rx="3" fill="#1c1c2a" style="fill:rgb(28, 28, 42);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <rect x="0" y="13" width="0" height="6" rx="3" fill="url(#barGrad1)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+        
+      </rect>
+    </g>
+
+    <g transform="translate(0, 168)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <text x="0" y="9" font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">CV Strength</text>
+      <text x="230" y="9" font-family="monospace" font-size="7" fill="#00d4aa" text-anchor="end" style="fill:rgb(0, 212, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:end;dominant-baseline:auto">7%</text>
+      <rect x="0" y="13" width="235" height="6" rx="3" fill="#1c1c2a" style="fill:rgb(28, 28, 42);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <rect x="0" y="13" width="0" height="6" rx="3" fill="url(#barGrad2)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+        
+      </rect>
+    </g>
+
+  </g>
+
+  
+  <rect x="0" y="224" width="400" height="36" fill="#0d0d18" style="fill:rgb(13, 13, 24);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="0" y1="224" x2="400" y2="224" stroke="#2a2a3a" stroke-width="1" style="fill:rgb(0, 0, 0);stroke:rgb(42, 42, 58);color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <g transform="translate(14, 236)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <text font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">JOBS INDEXED</text>
+    <text y="13" font-family="monospace" font-size="11" font-weight="700" fill="#6c63ff" style="fill:rgb(108, 99, 255);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:11px;font-weight:700;text-anchor:start;dominant-baseline:auto">1,172</text>
+  </g>
+  <line x1="100" y1="226" x2="100" y2="258" stroke="#2a2a3a" stroke-width="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(42, 42, 58);color:rgb(11, 11, 11);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <g transform="translate(108, 236)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <text font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">STACK</text>
+    <text y="13" font-family="monospace" font-size="9" font-weight="700" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:9px;font-weight:700;text-anchor:start;dominant-baseline:auto">FastAPI · Supabase</text>
+  </g>
+  <line x1="240" y1="226" x2="240" y2="258" stroke="#2a2a3a" stroke-width="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(42, 42, 58);color:rgb(11, 11, 11);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <g transform="translate(248, 236)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <text font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">EMBEDDING</text>
+    <text y="13" font-family="monospace" font-size="9" font-weight="700" fill="#ffaa00" style="fill:rgb(255, 170, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:9px;font-weight:700;text-anchor:start;dominant-baseline:auto">Gemini API</text>
+  </g>
+  <line x1="330" y1="226" x2="330" y2="258" stroke="#2a2a3a" stroke-width="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(42, 42, 58);color:rgb(11, 11, 11);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <g transform="translate(338, 236)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <text font-family="monospace" font-size="7" fill="#8888aa" style="fill:rgb(136, 136, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:7px;font-weight:400;text-anchor:start;dominant-baseline:auto">DEPLOY</text>
+    <text y="13" font-family="monospace" font-size="9" font-weight="700" fill="#00d4aa" style="fill:rgb(0, 212, 170);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:9px;font-weight:700;text-anchor:start;dominant-baseline:auto">Railway+Vercel</text>
+  </g>
+
+  </g>
+</svg>
