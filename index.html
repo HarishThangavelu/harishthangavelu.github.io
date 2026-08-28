@@ -16,7 +16,7 @@
   --accent2:#00d4aa;
   --text:#f0efff;
   --muted:#8888aa;
-  --card-h:320px;
+  --card-h:360px;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:15px;line-height:1.7;overflow-x:hidden}
@@ -98,7 +98,7 @@ section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
 .flip-card.flipped .flip-inner{transform:rotateY(180deg)}
 .flip-front,.flip-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:12px;border:1px solid var(--border);overflow:hidden}
 .flip-front{background:var(--surface);padding:1.5rem;display:flex;flex-direction:column}
-.flip-back{background:var(--surface2);transform:rotateY(180deg);padding:1.5rem;display:flex;flex-direction:column;justify-content:space-between}
+.flip-back{background:var(--surface2);transform:rotateY(180deg);padding:1rem;display:flex;flex-direction:column;justify-content:flex-start;gap:.4rem}
 .flip-card:hover .flip-front{border-color:var(--accent)}
 .project-type{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.6rem}
 .project-title{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:.5rem;line-height:1.3}
@@ -117,15 +117,8 @@ section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
 .building-badge{display:inline-flex;align-items:center;gap:.35rem;font-size:.65rem;font-weight:700;color:#f9a825;background:rgba(249,168,37,.1);border:1px solid rgba(249,168,37,.25);border-radius:4px;padding:.15rem .45rem;text-transform:uppercase;letter-spacing:.08em}
 
 /* visual placeholder on back */
-.back-visual{height:80px;border-radius:8px;margin-bottom:.75rem;display:flex;align-items:center;justify-content:center;font-size:2rem;position:relative;overflow:hidden}
-.vis-orbit{background:linear-gradient(135deg,#1a1a2e,#16213e);animation:orbit-glow 3s ease-in-out infinite alternate}
-.vis-ai{background:linear-gradient(135deg,#0d1117,#1c1f26);animation:ai-pulse 2.5s ease-in-out infinite}
-.vis-cv{background:linear-gradient(135deg,#0f1923,#1a2a1a);animation:cv-scan 2s linear infinite}
-.vis-app{background:linear-gradient(135deg,#1a0a2e,#2a1a0e);animation:app-shift 4s ease infinite}
-@keyframes orbit-glow{from{box-shadow:inset 0 0 20px rgba(108,99,255,.2)}to{box-shadow:inset 0 0 40px rgba(108,99,255,.5)}}
-@keyframes ai-pulse{0%,100%{box-shadow:inset 0 0 20px rgba(0,212,170,.1)}50%{box-shadow:inset 0 0 40px rgba(0,212,170,.3)}}
-@keyframes cv-scan{0%{box-shadow:inset 0 0 20px rgba(100,200,100,.1)}50%{box-shadow:inset 0 0 30px rgba(100,200,100,.3)}100%{box-shadow:inset 0 0 20px rgba(100,200,100,.1)}}
-@keyframes app-shift{0%,100%{box-shadow:inset 0 0 20px rgba(249,168,37,.1)}50%{box-shadow:inset 0 0 40px rgba(249,168,37,.2)}}
+.back-visual{width:100%;border-radius:8px;margin-bottom:.75rem;overflow:hidden;flex-shrink:0}
+.back-visual img{width:100%;height:auto;display:block;border-radius:8px}
 
 /* EDUCATION */
 .edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem}
@@ -212,7 +205,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
       </div>
     </div>
     <div class="hero-photo-wrap">
-      <div class="hero-photo">🤖</div>
+      <div class="hero-photo"><img src="Gemini_Generated_Image_paagkapaagkapaag.png" alt="Harish Thangavelu"/></div>
     </div>
   </div>
 </section>
@@ -433,15 +426,9 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           <div class="flip-hint">↕ Click to see results</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual vis-orbit">🛰️</div>
-          <div class="back-metrics">
-            <div class="metric"><span class="metric-label">RMSE reduction @ 1h</span><span class="metric-value">82.87%</span></div>
-            <div class="metric"><span class="metric-label">RMSE reduction @ 24h</span><span class="metric-value">36.01%</span></div>
-            <div class="metric"><span class="metric-label">Prediction horizons</span><span class="metric-value">1h → 720h</span></div>
-            <div class="metric"><span class="metric-label">Dataset size</span><span class="metric-value">44,640 rows · 9D</span></div>
-          </div>
-          <div class="back-links">
-            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+          <div class="back-visual"><img src="img_orbit.svg" alt="SGP4-LSTM orbit prediction visualisation"/></div>
+          <div class="back-links" style="margin-top:.5rem">
+            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub ↗</a>
           </div>
         </div>
       </div>
@@ -460,15 +447,9 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           <div class="flip-hint">↕ Click to see results</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual vis-cv">🔍</div>
-          <div class="back-metrics">
-            <div class="metric"><span class="metric-label">Throughput increase</span><span class="metric-value">3.2×</span></div>
-            <div class="metric"><span class="metric-label">Hyperparameter search</span><span class="metric-value">7× faster</span></div>
-            <div class="metric"><span class="metric-label">Accuracy lift</span><span class="metric-value">30% → 70%</span></div>
-            <div class="metric"><span class="metric-label">Object classes</span><span class="metric-value">18 custom</span></div>
-          </div>
-          <div class="back-links">
-            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+          <div class="back-visual"><img src="img_cvat.svg" alt="CVAT wire harness annotation pipeline visualisation"/></div>
+          <div class="back-links" style="margin-top:.5rem">
+            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub ↗</a>
           </div>
         </div>
       </div>
@@ -487,15 +468,9 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           <div class="flip-hint">↕ Click to see results</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual vis-ai">🎯</div>
-          <div class="back-metrics">
-            <div class="metric"><span class="metric-label">Job listings indexed</span><span class="metric-value">1,172</span></div>
-            <div class="metric"><span class="metric-label">ATS score components</span><span class="metric-value">9-component</span></div>
-            <div class="metric"><span class="metric-label">API calls per request</span><span class="metric-value">50 → 1</span></div>
-            <div class="metric"><span class="metric-label">Scoring metrics</span><span class="metric-value">5 distinct</span></div>
-          </div>
-          <div class="back-links">
-            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+          <div class="back-visual"><img src="img_kaampass.svg" alt="Kaampass ATS scoring engine visualisation"/></div>
+          <div class="back-links" style="margin-top:.5rem">
+            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub ↗</a>
           </div>
         </div>
       </div>
@@ -514,15 +489,9 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           <div class="flip-hint">↕ Click to see results</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual vis-cv">🗺️</div>
-          <div class="back-metrics">
-            <div class="metric"><span class="metric-label">Path planning</span><span class="metric-value">A* algorithm</span></div>
-            <div class="metric"><span class="metric-label">Obstacle response</span><span class="metric-value">Dynamic re-route</span></div>
-            <div class="metric"><span class="metric-label">Sensing</span><span class="metric-value">LiDAR + SLAM</span></div>
-            <div class="metric"><span class="metric-label">Validated</span><span class="metric-value">Gazebo simulation</span></div>
-          </div>
-          <div class="back-links">
-            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub</a>
+          <div class="back-visual"><img src="img_ros2.svg" alt="ROS2 A* autonomous navigation map"/></div>
+          <div class="back-links" style="margin-top:.5rem">
+            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub ↗</a>
           </div>
         </div>
       </div>
@@ -544,14 +513,8 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           <div class="flip-hint">↕ Click for details</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual vis-app">⏱️</div>
-          <div class="back-metrics">
-            <div class="metric"><span class="metric-label">Stack</span><span class="metric-value">React 19 + FastAPI</span></div>
-            <div class="metric"><span class="metric-label">Features</span><span class="metric-value">Shifts, Payslips, Leave</span></div>
-            <div class="metric"><span class="metric-label">Deployment</span><span class="metric-value">Docker · Cloud Ready</span></div>
-            <div class="metric"><span class="metric-label">Status</span><span class="metric-value" style="color:#f9a825">Active Development</span></div>
-          </div>
-          <div style="font-size:.72rem;color:var(--muted);margin-top:.5rem">Personal project — enterprise attendance management system with real-time shift tracking and statutory payslip generation.</div>
+          <div class="back-visual"><img src="img_facility.svg" alt="Facility Care attendance portal dashboard"/></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:.5rem;line-height:1.5">Real-time shift tracking, payslip generation &amp; leave management — React 19 + Docker.</div>
         </div>
       </div>
     </div>
