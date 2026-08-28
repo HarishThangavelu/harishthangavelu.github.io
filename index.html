@@ -8,33 +8,20 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0a0a0f;
-  --surface:#13131a;
-  --surface2:#1c1c26;
-  --border:#2a2a3a;
-  --accent:#6c63ff;
-  --accent2:#00d4aa;
-  --text:#f0efff;
-  --muted:#8888aa;
-  --card-h:360px;
+  --bg:#0a0a0f;--surface:#13131a;--surface2:#1c1c26;--border:#2a2a3a;
+  --accent:#6c63ff;--accent2:#00d4aa;--text:#f0efff;--muted:#8888aa;--card-h:380px;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:15px;line-height:1.7;overflow-x:hidden}
-
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem}
 .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
 .nav-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:var(--accent);letter-spacing:-0.5px}
 .nav-links{display:flex;gap:1.75rem;list-style:none}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:var(--text)}
-
-/* SECTIONS */
 section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
 .section-label{font-size:11px;font-weight:600;letter-spacing:.12em;color:var(--accent2);text-transform:uppercase;margin-bottom:.75rem}
 .section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--text);margin-bottom:2.5rem;line-height:1.2}
-
-/* HERO */
 #hero{padding-top:7rem;padding-bottom:4rem;max-width:1100px;margin:0 auto}
 .hero-grid{display:grid;grid-template-columns:1fr 260px;gap:3rem;align-items:center}
 .hero-eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--accent2);text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
@@ -55,14 +42,11 @@ section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
 .btn-outline{background:transparent;color:var(--text);border-color:var(--border)}
 .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
 .hero-photo-wrap{display:flex;justify-content:center}
-.hero-photo{width:220px;height:220px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);box-shadow:0 0 40px rgba(108,99,255,0.3);background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:5rem;overflow:hidden}
-.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo{width:220px;height:220px;border-radius:50%;border:3px solid var(--accent);box-shadow:0 0 40px rgba(108,99,255,0.3);background:var(--surface2);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .status-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:11px;font-weight:600;color:var(--accent2);background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.2);border-radius:20px;padding:.25rem .7rem;margin-bottom:1rem}
 .status-dot{width:6px;height:6px;border-radius:50%;background:var(--accent2);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-
-/* SKILLS */
-#skills{background:var(--surface);border-radius:16px;padding:3rem 2rem}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
 .skill-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1.25rem;transition:border-color .2s}
 .skill-card:hover{border-color:var(--accent)}
@@ -74,14 +58,10 @@ section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
 .tag{font-size:.7rem;font-weight:500;padding:.2rem .55rem;border-radius:4px;background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
 .tag-accent{background:rgba(108,99,255,.1);color:#a09aff;border-color:rgba(108,99,255,.2)}
 .tag-teal{background:rgba(0,212,170,.08);color:#4ad9c0;border-color:rgba(0,212,170,.18)}
-
-/* EXPERIENCE */
 .exp-list{display:flex;flex-direction:column;gap:0}
-.exp-item{display:grid;grid-template-columns:140px 1fr;gap:1.5rem;padding:2rem 0;border-bottom:1px solid var(--border);position:relative}
+.exp-item{display:grid;grid-template-columns:140px 1fr;gap:1.5rem;padding:2rem 0;border-bottom:1px solid var(--border)}
 .exp-item:last-child{border-bottom:none}
 .exp-date{font-size:.75rem;color:var(--muted);padding-top:.2rem;font-weight:500;line-height:1.5}
-.exp-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);position:absolute;left:140px;top:2.3rem;transform:translateX(-50%) translateX(.75rem);display:none}
-.exp-content{}
 .exp-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1rem;color:var(--text);margin-bottom:.15rem}
 .exp-company{font-size:.82rem;color:var(--accent2);margin-bottom:.2rem;font-weight:500}
 .exp-location{font-size:.75rem;color:var(--muted);margin-bottom:.75rem}
@@ -89,38 +69,24 @@ section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
 .exp-bullets li{font-size:.83rem;color:var(--muted);padding-left:1rem;position:relative;line-height:1.65}
 .exp-bullets li::before{content:'→';position:absolute;left:0;color:var(--accent);font-size:.75rem}
 .exp-bullets li strong{color:var(--text)}
-
-/* PROJECTS - flip cards */
-#projects{padding-top:5rem;padding-bottom:5rem}
+#projects{padding-top:2rem;padding-bottom:5rem}
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
 .flip-card{height:var(--card-h);perspective:1000px;cursor:pointer}
 .flip-inner{position:relative;width:100%;height:100%;transition:transform .65s cubic-bezier(.4,0,.2,1);transform-style:preserve-3d}
 .flip-card.flipped .flip-inner{transform:rotateY(180deg)}
 .flip-front,.flip-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:12px;border:1px solid var(--border);overflow:hidden}
 .flip-front{background:var(--surface);padding:1.5rem;display:flex;flex-direction:column}
-.flip-back{background:var(--surface2);transform:rotateY(180deg);padding:1rem;display:flex;flex-direction:column;justify-content:flex-start;gap:.4rem}
+.flip-back{background:var(--surface2);transform:rotateY(180deg);padding:.75rem;display:flex;flex-direction:column;gap:.5rem}
 .flip-card:hover .flip-front{border-color:var(--accent)}
 .project-type{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.6rem}
 .project-title{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:.5rem;line-height:1.3}
 .project-desc{font-size:.78rem;color:var(--muted);flex:1;line-height:1.7}
 .project-tags{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.75rem}
 .flip-hint{font-size:.68rem;color:var(--muted);margin-top:.75rem;display:flex;align-items:center;gap:.3rem;opacity:.6}
-.back-metrics{display:flex;flex-direction:column;gap:.5rem}
-.metric{display:flex;justify-content:space-between;align-items:center;padding:.4rem .6rem;background:var(--bg);border-radius:6px}
-.metric-label{font-size:.72rem;color:var(--muted)}
-.metric-value{font-size:.78rem;font-weight:700;color:var(--accent2)}
-.back-stack{margin-top:.75rem}
-.back-stack-title{font-size:.68rem;color:var(--muted);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em}
-.back-links{display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap}
-.back-link{font-size:.72rem;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:4px;padding:.2rem .55rem}
+.back-img{width:100%;border-radius:8px;display:block;flex-shrink:0}
+.back-link{font-size:.72rem;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:4px;padding:.25rem .6rem;align-self:flex-start;margin-top:auto}
 .back-link:hover{background:var(--accent);color:#fff}
 .building-badge{display:inline-flex;align-items:center;gap:.35rem;font-size:.65rem;font-weight:700;color:#f9a825;background:rgba(249,168,37,.1);border:1px solid rgba(249,168,37,.25);border-radius:4px;padding:.15rem .45rem;text-transform:uppercase;letter-spacing:.08em}
-
-/* visual placeholder on back */
-.back-visual{width:100%;border-radius:8px;margin-bottom:.75rem;overflow:hidden;flex-shrink:0}
-.back-visual img{width:100%;height:auto;display:block;border-radius:8px}
-
-/* EDUCATION */
 .edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem}
 .edu-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.4rem;transition:border-color .2s}
 .edu-card:hover{border-color:var(--accent2)}
@@ -128,19 +94,13 @@ section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
 .edu-school{font-size:.82rem;color:var(--accent2);font-weight:500;margin-bottom:.15rem}
 .edu-period{font-size:.75rem;color:var(--muted);margin-bottom:.65rem}
 .edu-courses{font-size:.75rem;color:var(--muted);line-height:1.7}
-
-/* CONTACT */
 #contact{text-align:center}
 .contact-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:3rem 2rem;max-width:540px;margin:0 auto}
 .contact-links{display:flex;flex-direction:column;gap:.65rem;margin-top:1.5rem}
 .contact-link{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--muted);font-size:.85rem;padding:.5rem .75rem;border-radius:7px;border:1px solid var(--border);transition:all .2s}
 .contact-link:hover{border-color:var(--accent);color:var(--text)}
 .contact-link svg{width:16px;height:16px;color:var(--accent);flex-shrink:0}
-
-/* FOOTER */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:.78rem;color:var(--muted)}
-
-/* RESPONSIVE */
 @media(max-width:700px){
   .hero-grid{grid-template-columns:1fr;text-align:center}
   .hero-photo-wrap{order:-1}
@@ -152,9 +112,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
   nav{padding:0 1rem}
   section{padding:3.5rem 1rem}
 }
-@media(prefers-reduced-motion:reduce){
-  .flip-inner,.status-dot{transition:none;animation:none}
-}
+@media(prefers-reduced-motion:reduce){.flip-inner,.status-dot{transition:none;animation:none}}
 </style>
 </head>
 <body>
@@ -176,18 +134,11 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
 <section id="hero">
   <div class="hero-grid">
     <div>
-      <div class="status-badge">
-        <span class="status-dot"></span>
-        Open to opportunities
-      </div>
+      <div class="status-badge"><span class="status-dot"></span>Open to opportunities</div>
       <div class="hero-eyebrow">ML &amp; AI Engineer</div>
       <h1 class="hero-name">Hello, I'm<br><span>Harish Thangavelu</span></h1>
       <p class="hero-role"><strong>ML Engineer · AI Engineer · Computer Vision</strong></p>
-      <p class="hero-bio">
-        MSc Electro-Mobility student at FAU Erlangen-Nürnberg, specialising in AI &amp; Autonomous Driving.
-        I build end-to-end ML systems — from physics-informed satellite models and computer vision annotation pipelines
-        to GenAI agentic backends and full-stack AI platforms.
-      </p>
+      <p class="hero-bio">MSc Electro-Mobility student at FAU Erlangen-Nürnberg, specialising in AI &amp; Autonomous Driving. I build end-to-end ML systems — from physics-informed satellite models and computer vision annotation pipelines to GenAI agentic backends and full-stack AI platforms.</p>
       <div class="hero-meta">
         <a href="mailto:harishthangavelu26@gmail.com">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
@@ -205,7 +156,10 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
       </div>
     </div>
     <div class="hero-photo-wrap">
-      <div class="hero-photo"><img src="Gemini_Generated_Image_paagkapaagkapaag.png" alt="Harish Thangavelu"/></div>
+      <div class="hero-photo">
+        <img src="Gemini_Generated_Image_paagkapaagkapaag.png" alt="Harish Thangavelu"
+             onerror="this.style.display='none';this.parentElement.innerHTML='&#129302;';this.parentElement.style.fontSize='5rem'"/>
+      </div>
     </div>
   </div>
 </section>
@@ -216,140 +170,46 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
   <div class="section-label">Technical Skills</div>
   <div class="section-title" style="margin-bottom:1.75rem">What I work with</div>
   <div class="skills-grid">
-
     <div class="skill-card">
-      <div class="skill-card-header">
-        <div class="skill-icon" style="background:rgba(108,99,255,.12)">🧠</div>
-        <div class="skill-card-title">Machine Learning</div>
-      </div>
+      <div class="skill-card-header"><div class="skill-icon" style="background:rgba(108,99,255,.12)">🧠</div><div class="skill-card-title">Machine Learning</div></div>
       <div class="skill-card-sub">My strongest suite — end-to-end model development</div>
-      <div class="skill-tags">
-        <span class="tag tag-accent">PyTorch</span><span class="tag tag-accent">TensorFlow</span>
-        <span class="tag tag-accent">LSTM</span><span class="tag tag-accent">Residual Learning</span>
-        <span class="tag tag-accent">Surrogate Modeling</span><span class="tag tag-accent">Hyperparameter Opt.</span>
-        <span class="tag tag-accent">Multi-Armed Bandit</span><span class="tag tag-accent">Scikit-learn</span>
-        <span class="tag tag-accent">Time Series</span><span class="tag tag-accent">Anomaly Detection</span>
-      </div>
+      <div class="skill-tags"><span class="tag tag-accent">PyTorch</span><span class="tag tag-accent">TensorFlow</span><span class="tag tag-accent">LSTM</span><span class="tag tag-accent">Residual Learning</span><span class="tag tag-accent">Surrogate Modeling</span><span class="tag tag-accent">Hyperparameter Opt.</span><span class="tag tag-accent">Multi-Armed Bandit</span><span class="tag tag-accent">Scikit-learn</span><span class="tag tag-accent">Time Series</span><span class="tag tag-accent">Anomaly Detection</span></div>
     </div>
-
     <div class="skill-card">
-      <div class="skill-card-header">
-        <div class="skill-icon" style="background:rgba(0,212,170,.1)">👁️</div>
-        <div class="skill-card-title">Computer Vision</div>
-      </div>
+      <div class="skill-card-header"><div class="skill-icon" style="background:rgba(0,212,170,.1)">👁️</div><div class="skill-card-title">Computer Vision</div></div>
       <div class="skill-card-sub">Object detection, annotation pipelines, industrial CV</div>
-      <div class="skill-tags">
-        <span class="tag tag-teal">MMDetection</span><span class="tag tag-teal">YOLOv8</span>
-        <span class="tag tag-teal">MMRotate</span><span class="tag tag-teal">OpenCV</span>
-        <span class="tag tag-teal">CVAT</span><span class="tag tag-teal">Nuclio</span>
-        <span class="tag tag-teal">Object Detection</span><span class="tag tag-teal">Image Segmentation</span>
-        <span class="tag tag-teal">OCR Pipelines</span><span class="tag tag-teal">OpenMMLab</span>
-      </div>
+      <div class="skill-tags"><span class="tag tag-teal">MMDetection</span><span class="tag tag-teal">YOLOv8</span><span class="tag tag-teal">MMRotate</span><span class="tag tag-teal">OpenCV</span><span class="tag tag-teal">CVAT</span><span class="tag tag-teal">Nuclio</span><span class="tag tag-teal">Object Detection</span><span class="tag tag-teal">Image Segmentation</span><span class="tag tag-teal">OCR Pipelines</span><span class="tag tag-teal">OpenMMLab</span></div>
     </div>
-
     <div class="skill-card">
-      <div class="skill-card-header">
-        <div class="skill-icon" style="background:rgba(255,160,80,.1)">✨</div>
-        <div class="skill-card-title">Generative AI &amp; Agents</div>
-      </div>
+      <div class="skill-card-header"><div class="skill-icon" style="background:rgba(255,160,80,.1)">✨</div><div class="skill-card-title">Generative AI &amp; Agents</div></div>
       <div class="skill-card-sub">LLM integration, agentic pipelines, RAG systems</div>
-      <div class="skill-tags">
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">OpenAI API</span>
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">LangChain</span>
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">LangGraph</span>
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">RAG</span>
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Agentic AI</span>
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Prompt Engineering</span>
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">n8n Workflows</span>
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">ElevenLabs</span>
-        <span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Twilio</span>
-      </div>
+      <div class="skill-tags"><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">OpenAI API</span><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">LangChain</span><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">LangGraph</span><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">RAG</span><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Agentic AI</span><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Prompt Engineering</span><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">n8n Workflows</span><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">ElevenLabs</span><span class="tag" style="background:rgba(255,160,80,.1);color:#ffb366;border-color:rgba(255,160,80,.2)">Twilio</span></div>
     </div>
-
     <div class="skill-card">
-      <div class="skill-card-header">
-        <div class="skill-icon" style="background:rgba(100,200,255,.1)">🔧</div>
-        <div class="skill-card-title">Backend &amp; APIs</div>
-      </div>
+      <div class="skill-card-header"><div class="skill-icon" style="background:rgba(100,200,255,.1)">🔧</div><div class="skill-card-title">Backend &amp; APIs</div></div>
       <div class="skill-card-sub">Production-grade backend systems and REST services</div>
-      <div class="skill-tags">
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">FastAPI</span>
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Django</span>
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">REST APIs</span>
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Node.js</span>
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Express.js</span>
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Docker</span>
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Docker Compose</span>
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Bash</span>
-        <span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Linux</span>
-      </div>
+      <div class="skill-tags"><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">FastAPI</span><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Django</span><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">REST APIs</span><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Node.js</span><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Express.js</span><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Docker</span><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Docker Compose</span><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Bash</span><span class="tag" style="background:rgba(100,200,255,.08);color:#80d0ff;border-color:rgba(100,200,255,.18)">Linux</span></div>
     </div>
-
     <div class="skill-card">
-      <div class="skill-card-header">
-        <div class="skill-icon" style="background:rgba(200,100,255,.1)">🗄️</div>
-        <div class="skill-card-title">Data &amp; Databases</div>
-      </div>
+      <div class="skill-card-header"><div class="skill-icon" style="background:rgba(200,100,255,.1)">🗄️</div><div class="skill-card-title">Data &amp; Databases</div></div>
       <div class="skill-card-sub">Pipelines, storage, vector search</div>
-      <div class="skill-tags">
-        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">PostgreSQL</span>
-        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Supabase</span>
-        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">SQL</span>
-        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Vector Search</span>
-        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Embeddings</span>
-        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">pandas</span>
-        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">NumPy</span>
-        <span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">AWS S3</span>
-      </div>
+      <div class="skill-tags"><span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">PostgreSQL</span><span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Supabase</span><span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">SQL</span><span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Vector Search</span><span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">Embeddings</span><span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">pandas</span><span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">NumPy</span><span class="tag" style="background:rgba(200,100,255,.08);color:#cc88ff;border-color:rgba(200,100,255,.18)">AWS S3</span></div>
     </div>
-
     <div class="skill-card">
-      <div class="skill-card-header">
-        <div class="skill-icon" style="background:rgba(255,100,100,.1)">📊</div>
-        <div class="skill-card-title">Data Visualisation</div>
-      </div>
+      <div class="skill-card-header"><div class="skill-icon" style="background:rgba(255,100,100,.1)">📊</div><div class="skill-card-title">Data Visualisation</div></div>
       <div class="skill-card-sub">Dashboards, KPI systems, scientific visualisation</div>
-      <div class="skill-tags">
-        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Streamlit</span>
-        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">CesiumJS</span>
-        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Plotly</span>
-        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Power BI</span>
-        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Heatmaps</span>
-        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Jupyter</span>
-        <span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Matplotlib</span>
-      </div>
+      <div class="skill-tags"><span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Streamlit</span><span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">CesiumJS</span><span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Plotly</span><span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Power BI</span><span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Heatmaps</span><span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Jupyter</span><span class="tag" style="background:rgba(255,100,100,.08);color:#ff9999;border-color:rgba(255,100,100,.18)">Matplotlib</span></div>
     </div>
-
     <div class="skill-card">
-      <div class="skill-card-header">
-        <div class="skill-icon" style="background:rgba(0,200,120,.1)">🤖</div>
-        <div class="skill-card-title">Robotics &amp; Simulation</div>
-      </div>
+      <div class="skill-card-header"><div class="skill-icon" style="background:rgba(0,200,120,.1)">🤖</div><div class="skill-card-title">Robotics &amp; Simulation</div></div>
       <div class="skill-card-sub">Autonomous systems, physics-based simulation</div>
-      <div class="skill-tags">
-        <span class="tag tag-teal">ROS2</span><span class="tag tag-teal">Gazebo</span>
-        <span class="tag tag-teal">SLAM</span><span class="tag tag-teal">LiDAR</span>
-        <span class="tag tag-teal">A* Path Planning</span><span class="tag tag-teal">SGP4</span>
-        <span class="tag tag-teal">Orbital Mechanics</span><span class="tag tag-teal">State-Space Modeling</span>
-      </div>
+      <div class="skill-tags"><span class="tag tag-teal">ROS2</span><span class="tag tag-teal">Gazebo</span><span class="tag tag-teal">SLAM</span><span class="tag tag-teal">LiDAR</span><span class="tag tag-teal">A* Path Planning</span><span class="tag tag-teal">SGP4</span><span class="tag tag-teal">Orbital Mechanics</span><span class="tag tag-teal">State-Space Modeling</span></div>
     </div>
-
     <div class="skill-card">
-      <div class="skill-card-header">
-        <div class="skill-icon" style="background:rgba(255,220,50,.1)">☁️</div>
-        <div class="skill-card-title">Cloud &amp; DevOps</div>
-      </div>
+      <div class="skill-card-header"><div class="skill-icon" style="background:rgba(255,220,50,.1)">☁️</div><div class="skill-card-title">Cloud &amp; DevOps</div></div>
       <div class="skill-card-sub">Deployment, cloud infrastructure, CI/CD</div>
-      <div class="skill-tags">
-        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">AWS EC2</span>
-        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">AWS SageMaker</span>
-        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Railway</span>
-        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Vercel</span>
-        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Git</span>
-        <span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">GitHub Actions</span>
-      </div>
+      <div class="skill-tags"><span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">AWS EC2</span><span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">AWS SageMaker</span><span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Railway</span><span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Vercel</span><span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">Git</span><span class="tag" style="background:rgba(255,220,50,.08);color:#ffe066;border-color:rgba(255,220,50,.2)">GitHub Actions</span></div>
     </div>
-
   </div>
 </div>
 </div>
@@ -359,7 +219,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
   <div class="section-label">Work Experience</div>
   <div class="section-title">Professional Journey</div>
   <div class="exp-list">
-
     <div class="exp-item">
       <div class="exp-date">Mar 2026 – Present<br><span style="color:var(--accent2);font-size:.7rem">Ongoing</span></div>
       <div class="exp-content">
@@ -374,7 +233,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
         </ul>
       </div>
     </div>
-
     <div class="exp-item">
       <div class="exp-date">Aug 2025 – Feb 2026</div>
       <div class="exp-content">
@@ -389,7 +247,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
         </ul>
       </div>
     </div>
-
     <div class="exp-item">
       <div class="exp-date">Jun 2025 – Aug 2025</div>
       <div class="exp-content">
@@ -403,33 +260,28 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
         </ul>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" style="padding-top:2rem">
+<section id="projects">
   <div class="section-label">Projects</div>
   <div class="section-title">Click a card to flip it ↗</div>
   <div class="projects-grid">
 
     <!-- Card 1: Orbit -->
-    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="SGP4-LSTM project details">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="SGP4-LSTM project">
       <div class="flip-inner">
         <div class="flip-front">
           <div class="project-type" style="color:var(--accent)">🛰 Physics-Informed ML · MSc Thesis</div>
           <div class="project-title">Hybrid Orbit Prediction<br>SGP4 + LSTM</div>
           <div class="project-desc">Physics-informed LSTM that learns residual errors from ESA Swarm-A POD data to correct SGP4 orbital propagation — full pipeline from TLE ingestion to 3D visualisation.</div>
-          <div class="project-tags">
-            <span class="tag tag-accent">PyTorch</span><span class="tag tag-accent">LSTM</span><span class="tag tag-teal">SGP4</span><span class="tag">CesiumJS</span><span class="tag">Python</span>
-          </div>
+          <div class="project-tags"><span class="tag tag-accent">PyTorch</span><span class="tag tag-accent">LSTM</span><span class="tag tag-teal">SGP4</span><span class="tag">CesiumJS</span><span class="tag">Python</span></div>
           <div class="flip-hint">↕ Click to see results</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual"><img src="img_orbit.svg" alt="SGP4-LSTM orbit prediction visualisation"/></div>
-          <div class="back-links" style="margin-top:.5rem">
-            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub ↗</a>
-          </div>
+          <img class="back-img" src="satellite_orbit_svg.svg" alt="Orbit prediction visualisation"/>
+          <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">View on GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -441,16 +293,12 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           <div class="project-type" style="color:var(--accent2)">👁 Computer Vision · Industrial</div>
           <div class="project-title">Automated CV Annotation<br>Wire Harness Pipeline</div>
           <div class="project-desc">End-to-end annotation automation for engineering schematics — YOLOv8 + MMRotate via Nuclio serverless, Multi-Armed Bandit optimiser, and live Streamlit dashboards.</div>
-          <div class="project-tags">
-            <span class="tag tag-teal">YOLOv8</span><span class="tag tag-teal">MMDetection</span><span class="tag tag-accent">MAB</span><span class="tag">CVAT</span><span class="tag">Docker</span>
-          </div>
+          <div class="project-tags"><span class="tag tag-teal">YOLOv8</span><span class="tag tag-teal">MMDetection</span><span class="tag tag-accent">MAB</span><span class="tag">CVAT</span><span class="tag">Docker</span></div>
           <div class="flip-hint">↕ Click to see results</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual"><img src="img_cvat.svg" alt="CVAT wire harness annotation pipeline visualisation"/></div>
-          <div class="back-links" style="margin-top:.5rem">
-            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub ↗</a>
-          </div>
+          <img class="back-img" src="cvat_pipeline_svg.svg" alt="CVAT annotation pipeline visualisation"/>
+          <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">View on GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -462,16 +310,12 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           <div class="project-type" style="color:#ffb366">🧠 AI Platform · Full-Stack</div>
           <div class="project-title">Kaampass<br>AI Job Matching Engine</div>
           <div class="project-desc">Production job-matching platform with 9-component ATS scoring, Gemini semantic embeddings, two-stage matching architecture, and live cloud deployment.</div>
-          <div class="project-tags">
-            <span class="tag">FastAPI</span><span class="tag tag-accent">Gemini API</span><span class="tag">Supabase</span><span class="tag">Docker</span><span class="tag">Vercel</span>
-          </div>
+          <div class="project-tags"><span class="tag">FastAPI</span><span class="tag tag-accent">Gemini API</span><span class="tag">Supabase</span><span class="tag">Docker</span><span class="tag">Vercel</span></div>
           <div class="flip-hint">↕ Click to see results</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual"><img src="img_kaampass.svg" alt="Kaampass ATS scoring engine visualisation"/></div>
-          <div class="back-links" style="margin-top:.5rem">
-            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub ↗</a>
-          </div>
+          <img class="back-img" src="kaampass_ats_svg.svg" alt="Kaampass ATS scoring engine"/>
+          <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">View on GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -483,22 +327,18 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           <div class="project-type" style="color:var(--accent2)">🤖 Robotics · ROS2</div>
           <div class="project-title">Autonomous Navigation<br>ROS2 &amp; Gazebo</div>
           <div class="project-desc">ROS2-based robot navigation framework with A* path planning, LiDAR + SLAM integration, dynamic obstacle detection, and rule-based risk decision thresholds.</div>
-          <div class="project-tags">
-            <span class="tag tag-teal">ROS2</span><span class="tag tag-teal">Gazebo</span><span class="tag tag-teal">SLAM</span><span class="tag">LiDAR</span><span class="tag">A*</span>
-          </div>
+          <div class="project-tags"><span class="tag tag-teal">ROS2</span><span class="tag tag-teal">Gazebo</span><span class="tag tag-teal">SLAM</span><span class="tag">LiDAR</span><span class="tag">A*</span></div>
           <div class="flip-hint">↕ Click to see results</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual"><img src="img_ros2.svg" alt="ROS2 A* autonomous navigation map"/></div>
-          <div class="back-links" style="margin-top:.5rem">
-            <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">GitHub ↗</a>
-          </div>
+          <img class="back-img" src="ros2_navigation_svg.svg" alt="ROS2 A* navigation map"/>
+          <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">View on GitHub ↗</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 5: Attendance App -->
-    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="Attendance portal project">
+    <!-- Card 5: Facility App -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" aria-label="Facility Care portal">
       <div class="flip-inner">
         <div class="flip-front">
           <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem">
@@ -507,14 +347,12 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-si
           </div>
           <div class="project-title">Facility Care<br>Employee Portal</div>
           <div class="project-desc">Production-grade attendance tracking and shift management platform — React 19 + TypeScript frontend, Express backend, live shift speedometer gauge, payslip viewer, and Docker deployment.</div>
-          <div class="project-tags">
-            <span class="tag">React 19</span><span class="tag">TypeScript</span><span class="tag">Express.js</span><span class="tag">Docker</span><span class="tag">Tailwind</span>
-          </div>
+          <div class="project-tags"><span class="tag">React 19</span><span class="tag">TypeScript</span><span class="tag">Express.js</span><span class="tag">Docker</span><span class="tag">Tailwind</span></div>
           <div class="flip-hint">↕ Click for details</div>
         </div>
         <div class="flip-back">
-          <div class="back-visual"><img src="img_facility.svg" alt="Facility Care attendance portal dashboard"/></div>
-          <div style="font-size:.7rem;color:var(--muted);margin-top:.5rem;line-height:1.5">Real-time shift tracking, payslip generation &amp; leave management — React 19 + Docker.</div>
+          <img class="back-img" src="facility_app_svg.svg" alt="Facility Care attendance portal dashboard"/>
+          <a class="back-link" href="https://github.com/HarishThangavelu" target="_blank">View on GitHub ↗</a>
         </div>
       </div>
     </div>
